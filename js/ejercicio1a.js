@@ -1,8 +1,8 @@
 'use strict';
 
 const btn = document.createElement('input');
-btn.id = 'btn1';
 btn.type = 'button';
+btn.id = 'btn1';
 btn.value = '1 botón';
 
 
