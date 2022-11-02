@@ -1,5 +1,3 @@
-'use strict';
-
 const arr1 = [
     [1, 3, 5],
     [7, 9, 7],
@@ -17,15 +15,15 @@ const arr1 = [
   const col_arr2 = arr2[0].length;
   
   
-  let multiplicacion = new Array(fil_arr1);
-  for (x=0; x<multiplicacion.length;x++)
-      multiplicacion[x] = new Array(col_arr2).fill(0);
+  const result = new Array(fil_arr1);
+  for (x=0; x<result.length;x++)
+      result[x] = new Array(col_arr2).fill(0);
   
-  for (x=0; x < multiplicacion.length; x++) {
-      for (y=0; y < multiplicacion[x].length; y++) {                                
+  for (x=0; x < result.length; x++) {
+      for (y=0; y < result[x].length; y++) {                                
           for (z=0; z<col_arr1; z++) {
-              multiplicacion [x][y] = multiplicacion [x][y] + arr1[x][z]*arr2[z][y]; 
+              result [x][y] = result [x][y] + arr1[x][z]*arr2[z][y]; 
           }
       }
   }
-  console.log(multiplicacion)
+  console.log(result)
