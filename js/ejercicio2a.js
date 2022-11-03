@@ -1,3 +1,7 @@
+'use strict';
+
+/// Dados los arrays de arrays array1 y array2 obtén un nuevo array llamado result que sea el resultado de multiplicar las filas de primero por las columnas del segundo
+
 const arr1 = [
     [1, 3, 5],
     [7, 9, 7],
