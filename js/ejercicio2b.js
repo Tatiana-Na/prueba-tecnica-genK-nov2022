@@ -8,16 +8,4 @@ const result = [
     [40, 44, 56],
     ];
   
-  const resultToString = [].concat(...result);
-  
-  
-  resultToString.sort((a,b) => {
-  if (a > b) {
-    return 1 
-  }  
-  if ( b > a) {
-    return -1
-  }
-  return 0
-  })
-  console.log(resultToString)
+  const arrayString= result.toString();
